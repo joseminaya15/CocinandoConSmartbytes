@@ -1,0 +1,879 @@
+$regular   = 'MetricRegular'
+$bold      = 'MetricBold'
+$boldopen  = 'OpenSansRoboto';
+$medium    = 'MetricSemiBold'
+$light     = 'MetricLight'
+$color   = #FDB913
+$default = #01a982
+flexCenter()
+	display flex
+	display -webkit-flex
+	align-items center
+flexStart()
+	display flex
+	display -webkit-flex
+	align-items start
+flexEnd()
+	display flex
+	display -webkit-flex
+	align-items flex-end
+transitionAll()
+	-webkit-transition all .3s linear
+	-moz-transition all .3s linear
+	-ms-transition all .3s linear
+	-o-transition all .3s linear
+	transition all .3s linear
+transitionOpacity()
+	-webkit-transition opacity .3s linear
+	-moz-transition opacity .3s linear
+	-ms-transition opacity .3s linear
+	-o-transition opacity .3s linear
+	transition opacity .3s linear
+transitionWidth()
+	-webkit-transition width .3s linear
+	-moz-transition width .3s linear
+	-ms-transition width .3s linear
+	-o-transition width .3s linear
+	transition width .3s linear
+transitionMaxWidth()
+	-webkit-transition max-width .3s linear
+	-moz-transition max-width .3s linear
+	-ms-transition max-width .3s linear
+	-o-transition max-width .3s linear
+	transition max-width .3s linear
+transitionBgColor()
+	-webkit-transition background-color .3s linear
+	-moz-transition background-color .3s linear
+	-ms-transition background-color .3s linear
+	-o-transition background-color .3s linear
+	transition background-color .3s linear
+transitionTransform()
+	-webkit-transition transform .3s linear
+	-moz-transition transform .3s linear
+	-ms-transition transform .3s linear
+	-o-transition transform .3s linear
+	transition transform .3s linear
+absolute()
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+relative()
+	position relative
+	top 0
+	left 0
+	right 0
+	bottom 0
+flipCard()
+	-moz-backface-visibility hidden
+	-webkit-backface-visibility hidden
+	backface-visibility hidden
+	-webkit-transition -webkit-transform 500ms
+	-moz-transition -moz-transform 500ms
+	-o-transition -o-transform 500ms
+	transition transform 500ms
+	border-radius 5px
+	position absolute
+flipCardFront()
+	-webkit-transform perspective(600) rotateY(0)
+	-moz-transform perspective(600) rotateY(0)
+	-o-transform perspective(600) rotateY(0)
+	transform perspective(600) rotateY(0)
+flipCardBack()
+	-webkit-transform rotateY(-180deg)
+	-moz-transform rotateY(-180deg)
+	-o-transform rotateY(-180deg)
+	transform rotateY(-180deg)
+	z-index 900
+flipCardFrontHover()
+	-webkit-transform rotateY(180deg)
+	-moz-transform rotateY(180deg)
+	-o-transform rotateY(180deg)
+	transform rotateY(180deg)
+	-webkit-transform perspective(600) rotateY(180deg)
+	-moz-transform perspective(600) rotateY(180deg)
+	-o-transform perspective(600) rotateY(180deg)
+	transform perspective(600) rotateY(180deg)
+flipCardBackHover()
+	-webkit-transform rotateY(0)
+	-moz-transform rotateY(0)
+	-o-transform rotateY(0)
+	transform rotateY(0)
+	-webkit-transform perspective(600) rotateY(0)
+	-moz-transform perspective(600) rotateY(0)
+	-o-transform perspective(600) rotateY(0)
+	transform perspective(600) rotateY(0)
+	z-index 950
+body
+	margin 0
+	padding 0
+	overflow hidden
+	overflow-y scroll
+	font-family $regular
+	color #000000
+	background-color #EFEFEF
+img
+	width 100%
+p
+	margin 0
+	font-size 18px
+strong
+	font-family $medium
+.js-section
+	position relative
+	padding 40px 20px
+.js-white
+	background-color #FFFFFF
+.js-title
+	text-align center
+	font-size 32px
+	font-family $bold
+	margin 20px 0
+	&.white
+		color #FFFFFF
+	p
+		font-family $medium
+		font-size 18px
+		line-height 20px
+	small
+		font-family $regular
+		font-size 16px
+		line-height 18px
+.jm-white
+	background-color #FFFFFF
+.jm-subtitle
+	p
+		width 100%
+		max-width 800px
+		margin 20px auto
+		line-height 22px
+	h2
+		font-size 20px
+		line-height 22px
+		width 100%
+		max-width 650px
+		margin 20px auto
+.js-flex
+	flexCenter()
+	justify-content center
+.js-flex--start
+	flexStart()
+	justify-content center
+.js-height
+	height 100vh
+	.js-fondo
+		height 100vh
+		&:BEFORE
+			height 100vh
+.js-header
+	transitionAll()
+	position fixed
+	top 0
+	width 100%
+	z-index 5
+	padding 5px 25px
+	color #FFFFFF
+	height 75px
+	background-color #425563
+	&.js-fixed
+		background-color $color
+	.js-header--container
+		flexCenter()
+		width 100%
+		max-width 1150px
+		margin auto
+		height 100%
+	img
+		width 100%
+		max-width 125px
+	.js-header--left
+		flexCenter()
+		width 100%
+		max-width 300px
+		justify-content flex-start
+	.js-header--right
+		flexCenter()
+		width 100%
+		justify-content flex-end
+		text-align right
+		img 
+			max-width 115px
+.js-container
+	transitionMaxWidth()
+	height 100%
+	width 100%
+	max-width 1150px
+	margin auto
+.js-home
+	height 100vh
+.js-input
+	padding 7px 20px
+	height 70px
+	margin 0
+	border 1px solid rgba(0,0,0,0.15)
+	background-color #FFFFFF
+	margin-bottom -1px
+	color #333333
+	margin 5px 0
+	input 
+		background-color transparent
+	&.js-input--default
+		width 100%
+		max-width 400px
+		margin 20px auto
+	&.js-date
+		padding 5px 20px
+		.js-icon
+			width 100%
+			max-width 36px
+			text-align center
+	&.js-file
+		height 100%
+	&.js-radio
+		height 100%
+		.mdl-radio
+			width 100%
+			.mdl-radio__inner-circle
+				background $default
+			&.is-checked
+				.mdl-radio__outer-circle
+					border 2px solid $default
+			.mdl-radio__ripple-container 
+				.mdl-ripple
+					background $default
+	&.js-select
+		padding 0
+		.bootstrap-select
+			width 100% !important
+			height 100%;
+			.dropdown-toggle
+				padding 14px 24px
+				border-radius 0
+				box-shadow none
+				background-color transparent
+				height 100%
+				border none
+			.dropdown-menu
+				background-color rgba(248, 248, 248, 0.95)
+				border-radius 0
+				margin 0 
+				padding 0
+				&.open
+					margin 0
+					padding 0
+					li
+						a
+							padding 6px 20px
+							&:hover
+								background-color rgba(221,221,221,0.5)
+	label
+		font-family $light
+		color #666666
+		cursor pointer
+		margin-bottom 0
+		font-weight 100
+		font-size 14px
+	input
+		display block
+		height 36px
+		width 100%
+		border none
+		font-size 16px
+		&:focus
+			outline 0
+.js-select
+	&.js-standar
+		margin 5px 0
+		.bootstrap-select
+			width 100% !important
+			.btn-default
+				background-color #FFFFFF
+				color #757575
+				height 46px
+				border-radius 0	
+.js-contact-label
+	flexCenter()
+	flex-wrap wrap
+	.js-input-label
+		width 100%
+		max-width 120px
+.js-label
+	height 145px
+	margin 5px 0
+	span
+		font-family $bold
+		a
+			color #008FD3 !important
+	.mdl-checkbox__label
+		font-size 14px
+		color #000000
+		line-height 18px
+		font-family $regular
+		font-weight 100
+.js-button
+	background-color $default !important
+	text-decoration none !important
+	font-size 16px
+	color #FFFFFF !important
+	border 2px solid $default
+	margin 10px
+	font-family $medium
+	width 100%
+	max-width 160px
+	&.js-button--default
+		background-color transparent !important
+		border 2px solid #FFFFFF
+	&.js-login
+		background-color #535353 !important
+		border 2px solid #535353
+.mdl-radio__inner-circle
+	background #4983B6
+.mdl-checkbox
+	&.is-checked 
+		.mdl-checkbox__tick-outline
+			background #4983B6
+.mdl-checkbox__ripple-container 
+	&.mdl-ripple
+		background #4983B6
+.mdl-radio__ripple-container 
+	.mdl-ripple
+		background #4983B6
+.mdl-checkbox
+	&.is-checked 
+		.mdl-checkbox__box-outline
+			border 2px solid #4983B6
+.mdl-radio
+	&.is-checked 
+		.mdl-radio__outer-circle
+			border 2px solid #4983B6
+.js-checkbox
+	.mdl-checkbox
+		max-width 250px
+	.mdl-checkbox__label
+		font-size 15px
+		line-height 18px
+		font-weight 100
+	.mdl-checkbox__box-outline
+		border 2px solid #FFFFFF
+.js-fondo
+	absolute()
+	background url(../img/fondo/fondo1.jpeg) no-repeat bottom center
+	background-size cover !important
+	width 100%
+	height 100vh
+	z-index -1
+	&:BEFORE
+		absolute()
+		content ''
+		background-color #000000
+		z-index 0
+		height 100vh
+		opacity .5
+	&.fondo1
+		background url(../img/fondo/fondo1.jpeg) no-repeat center center
+	&.fondo2
+		background url(../img/fondo/fondo2.jpg) no-repeat center center
+	&.fondo3
+		background url(../img/fondo/fondo3.jpeg) no-repeat center center
+	&.fondo4
+		background url(../img/fondo/fondo4.jpg) no-repeat center center
+	&.fondo5
+		background url(../img/fondo/fondo5.jpg) no-repeat center center
+	&.fondo6
+		background url(../img/fondo/fondo6.png) no-repeat center center
+	&.fondo7
+		background url(../img/fondo/fondo7.png) no-repeat center center
+#home
+	height 100vh
+	position relative
+	.owl-stage-outer
+	.owl-stage
+		height 100vh
+	.owl-carousel
+		absolute()
+		width 100%
+		z-index 1
+		max-width 100%
+		.owl-item
+			height 100vh
+			.item
+				height 100vh
+footer
+	background-color #000000
+	color #FFFFFF
+	p
+		font-size 14px
+.nav-tabs
+	border none
+	&>li
+		&>a
+			border none !important
+			font-size 18px
+	&>li
+		&.active
+			&>a
+				font-family $bold
+/*BOOTSTRAP*/
+.navbar-default
+	transitionAll()
+	margin 0
+	padding 10px
+	border none
+	border-radius 0
+	position fixed
+	width 100%
+	background-color #425563
+	z-index 10
+	.navbar-nav
+		&>li
+			&>a
+				color #FFFFFF !important
+				font-size 18px
+				background-color transparent !important
+	.navbar-collapse
+		margin-top 10px
+.navbar-brand
+	padding 0
+	position relative
+	img
+		transitionMaxWidth()
+		max-width 125px
+	.jm-logo--flex
+		.jm-right
+			img 
+				max-width 90px				
+/*CLASES PROYECTO*/
+.js-contenido
+	text-align center
+	color #FFFFFF
+	max-width 680px
+	z-index 5
+	h2
+		font-size 60px
+		line-height 60px
+		font-family $bold
+		&.open-sans
+			font-family $boldopen
+	p
+		font-size 32px
+		line-height 34px
+		margin-bottom 10px
+	small
+		font-size 18px
+.js-information
+	padding 20px 0
+	text-align center
+	h1
+		font-size 24px
+		line-height 26px
+		max-width 600px
+		margin auto
+	h2
+		font-size 24px
+		line-height 26px
+		font-family $bold
+		margin 10px 0
+	h3
+		font-size 22px
+		line-height 24px
+		font-family $medium
+		margin 10px 0
+	h4
+		color $default
+		font-family $medium
+		font-size 20px
+		line-height 24px
+		margin 10px 0
+	p
+		font-size 18px
+		line-height 20px
+	span
+		font-size 16px
+		line-height 18px
+	img
+		max-width 100px
+	small
+		display block
+		font-size 18px
+		line-height 20px
+		margin-top 10px
+		font-family $medium
+		color $default
+	a
+		margin 10px auto
+		text-decoration none !important
+		display block
+		border 2px solid $default
+		padding 10px
+		width 100%
+		max-width 150px
+		font-size 18px
+		font-family $bold
+		color #000000
+.js-card
+	background-color #FFFFFF
+	box-shadow 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23)
+	padding 20px
+.js-partners
+	text-align center
+	img
+		max-width 225px
+		margin 15px
+.js-book
+	background-color #614767 !important
+	text-decoration none !important
+	text-transform initial
+	color #FFFFFF !important
+	height 26px
+	line-height 26px
+	vertical-align middle
+.js-confirmation
+	width 100%
+	max-width 550px
+	color #FFFFFF
+	text-align center
+	margin 40px auto
+	display none
+	&.aparecer
+		display block
+	h2
+		font-family $medium
+		font-size 30px
+		line-height 32px
+		margin 20px 0
+		color #000000
+		margin-bottom 5px
+	p
+		color #818181
+		font-size 24px
+		line-height 28px
+#registered
+	&.aparecer
+		h2
+			color #000000
+			font-size 28px
+			line-height 30px
+.js-reserva
+	button
+		width 100%
+		max-width 200px
+/*MATERIAL DESIGN*/
+.mdl-card
+.mdl-card__supporting-text
+	width 100%
+.mdl-card__menu
+	top 10px
+	right 10px
+	z-index 10
+.mdl-card__title
+	display block
+/*MODAL*/
+.modal
+	&.fade
+		.modal-dialog
+			margin 20px auto
+			.mdl-card__actions
+				padding 16px
+				button
+					margin 0 5px
+					text-transform initial
+					font-family $medium
+					&.js-button
+						background-color $default !important
+						text-decoration none !important
+						font-size 16px
+						color #FFFFFF !important
+						border 2px solid $default
+						width initial
+						font-family $medium
+		&.in
+			.modal-dialog
+				transform translate(1)
+				transform transform(-50% , -50%)
+				opacity 1
+.jm-modal
+	width 100%
+	max-width 1100px
+	margin 0
+	&.max-width-320
+		max-width 320px
+	.mdl-card
+		.mdl-card__title
+			text-align center
+			img 
+				max-width 120px
+			h2
+				font-size 28px
+				line-height 28px
+				font-family $medium
+		.mdl-card__supporting-text
+			&.jm-relative
+				position relative
+			p
+				font-size 16px
+				line-height 18px
+		.mdl-card__menu
+			.mdl-button
+				flexCenter()
+				justify-content center
+/*TABLE*/
+table
+	&>tbody
+		&>tr
+			&>td
+				font-size 16px
+.table-responsive
+	border none
+	ul
+		padding 0
+	&.js-table
+		table
+			&>tbody
+				&>tr
+					&>td
+						white-space inherit
+.jm-card--checkbox
+	background-color #FFFFFF
+	border-radius 5px
+	padding 15px
+	margin 10px 0
+	p
+		font-size 20px
+		line-height 24px
+		margin-bottom 10px
+.jm-input
+	margin 10px 0
+	display none
+.mdl-textfield
+	width 100%
+	&.is-dirty
+	&.is-focused
+		.mdl-textfield__label
+			color #000000
+			font-weight 100
+			font-size 12px
+	&.is-focused
+		.mdl-textfield__label
+			&:AFTER
+				bottom 15px
+				background-color #000000
+	.mdl-textfield__label
+		color #000000
+		font-family $regular
+		font-weight 100
+.jm-list--checkbox
+	.jm-title--checlbox
+		h2
+			font-size 16px
+			line-height 20px
+			text-decoration underline
+			color #818181
+			margin 10px 0
+	.js-checkbox
+		display inline-block
+		margin 0 15px
+		.mdl-checkbox__box-outline
+			border 2px solid #818181
+		.is-checked
+			.mdl-checkbox__box-outline
+				border 2px solid $default
+				.mdl-checkbox__tick-outline
+					background $default
+		&.max-width
+			.mdl-checkbox
+				max-width 100%
+				height 100%
+		&.jm-checkbox--company
+			width 100%
+			max-width 500px
+.jm-cupo
+	width 100%
+	max-width 400px
+	margin auto
+	text-align center
+	img 
+		max-width 200px
+	h2
+		color $default
+		font-size 24px
+		line-height 28px
+		font-family $medium
+		margin 10px 0
+	h3
+		font-size 32px
+		line-height 36px
+		font-family $bold
+		margin 20px 0
+.jm-question
+	transitionAll()
+	position absolute
+	top 0
+	opacity 0
+	transform translate(300px)
+	&.one-question
+		opacity 1
+		position relative
+		transform inherit
+	&.fadeOutLeft
+		position absolute
+	&.fadeInRight
+		position relative
+		z-index 10
+	.jm-list--action
+		text-align right
+		margin-top 20px
+.jm-logo--flex
+	flexCenter()
+	width 100%
+	max-width 300px
+	.jm-left
+		width 100%
+		padding 0 10px
+		border-right 1px solid #FFFFFF
+	.jm-right
+		width 100%
+		padding 0 10px
+		img 
+			max-width  120px
+.jm-book
+	text-align center
+	margin 20px 0
+	padding 0 5px
+	.jm-book__flip
+		position relative
+		width 100%
+		height 235px
+		margin-bottom 10px
+		.jm-book__front
+			flipCard()
+			flipCardFront()
+			width 100%
+			height 100%
+			max-width 180px
+			background-color #FFFFFF
+			left 0
+			right 0
+			margin auto
+			padding 10px
+			img 
+				max-width 150px
+				height 215px
+				object-fit cover
+				cursor pointer
+			.mdl-radio
+				display block
+				margin-top 20px
+				.mdl-radio__inner-circle
+				.mdl-radio__outer-circle
+					left 0
+					right 0
+					text-align center
+					margin auto
+		.jm-book__back
+			flipCard()
+			flipCardBack()
+			width 100%
+			height 100%
+			max-width 180px
+			background-color #425563
+			left 0
+			right 0
+			margin auto
+			padding 10px
+			h2
+				color #FFFFFF
+				margin 8px 0
+				font-size 24px
+				line-height 24px
+			p
+				color #FFFFFF
+				font-size 16px
+				line-height 18px
+				height 90px
+				overflow hidden
+				display -webkit-box
+				-webkit-line-clamp 5
+				-webkit-box-orient vertical
+			.js-button
+				margin 0
+				border none
+				margin-top 20px
+				max-width 120px
+				text-transform none
+		&:hover
+			.jm-book__front
+				flipCardFrontHover()
+			.jm-book__back
+				flipCardBackHover()
+.jm-acceso
+	text-align center
+	img 
+		max-width 200px
+		margin 20px auto
+		-webkit-animation mover .5s infinite  alternate
+		animation mover .5s infinite  alternate
+@-webkit-keyframes mover
+	0%
+		transform translateY(0)
+	100%
+		transform translateY(-20px)
+@keyframes mover
+	0%
+		transform translateY(0)
+	100%
+		transform translateY(-20px)
+/*TOASTR*/
+/*SCROLL*/
+::-webkit-scrollbar
+	width 5px
+	height 5px
+::-webkit-scrollbar-track
+	background-color transparent
+	border-radius 10px
+::-webkit-scrollbar-thumb
+	background-color #AAAAAA
+	border-radius 10px
+@media (min-width: 768px)
+	.navbar
+		background-color transparent
+		&.navbarcolor
+			background-color #425563
+			.navbar-brand
+				img
+					max-width 125px
+				.jm-logo--flex
+					.jm-right
+						img 
+							max-width 90px
+	.navbar-brand
+		img
+			max-width 150px
+		.jm-logo--flex
+			.jm-right
+				img 
+					max-width 125px	
+	.navbar-default
+		.navbar-collapse
+			margin-top 0
+// @media (min-width: 768px)
+// 	.js-header
+// 		background-color transparent
+// 		&.navbarcolor
+// 			background-color #425563
+@media (max-width: 768px)
+	.js-fondo
+		&.fondo1
+			background url(../img/fondo/fondo1_mobile.jpg) no-repeat center center
+@media (max-width: 600px)
+	.js-contenido
+		padding 20px
+		h2
+			font-size 38px
+			line-height 42px
+	.dataTables_info
+	.dataTables_paginate
+		margin 20px 0 !important
+	.js-fondo
+		background-position right !important
+			

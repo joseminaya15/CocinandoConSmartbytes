@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'MetricLight';
+    src: url('Metric/MetricWeb-Light.woff');
+    src: url('Metric/MetricWeb-Light.woff?#iefix') format('embedded-opentype'),
+    url('Metric/MetricWeb-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MetricRegular';
+    src: url('Metric/MetricWeb-Regular.woff');
+    src: url('Metric/MetricWeb-Regular.woff?#iefix') format('embedded-opentype'),
+    url('Metric/MetricWeb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MetricSemiBold';
+    src: url('Metric/MetricWeb-Medium.woff');
+    src: url('Metric/MetricWeb-Medium.woff?#iefix') format('embedded-opentype'),
+    url('Metric/MetricWeb-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MetricBold';
+    src: url('Metric/MetricWeb-Bold.woff');
+    src: url('Metric/MetricWeb-Bold.woff?#iefix') format('embedded-opentype'),
+    url('Metric/MetricWeb-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
