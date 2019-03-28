@@ -172,7 +172,7 @@ strong
 	top 0
 	width 100%
 	z-index 5
-	padding 5px 25px
+	padding 5px 15px
 	color #FFFFFF
 	height 75px
 	background-color #425563
@@ -198,7 +198,7 @@ strong
 		justify-content flex-end
 		text-align right
 		img 
-			max-width 115px
+			max-width 250px
 .js-container
 	transitionMaxWidth()
 	height 100%
@@ -358,7 +358,7 @@ strong
 		border 2px solid #FFFFFF
 .js-fondo
 	absolute()
-	background url(../img/fondo/fondo1.jpeg) no-repeat bottom center
+	background url(../img/fondo/fondo1.jpg) no-repeat bottom center
 	background-size cover !important
 	width 100%
 	height 100vh
@@ -371,19 +371,9 @@ strong
 		height 100vh
 		opacity .5
 	&.fondo1
-		background url(../img/fondo/fondo1.jpeg) no-repeat center center
+		background url(../img/fondo/fondo1.jpg) no-repeat center center
 	&.fondo2
 		background url(../img/fondo/fondo2.jpg) no-repeat center center
-	&.fondo3
-		background url(../img/fondo/fondo3.jpeg) no-repeat center center
-	&.fondo4
-		background url(../img/fondo/fondo4.jpg) no-repeat center center
-	&.fondo5
-		background url(../img/fondo/fondo5.jpg) no-repeat center center
-	&.fondo6
-		background url(../img/fondo/fondo6.png) no-repeat center center
-	&.fondo7
-		background url(../img/fondo/fondo7.png) no-repeat center center
 #home
 	height 100vh
 	position relative
@@ -404,6 +394,7 @@ footer
 	color #FFFFFF
 	p
 		font-size 14px
+		line-height 18px
 .nav-tabs
 	border none
 	&>li
@@ -448,11 +439,14 @@ footer
 	text-align center
 	color #FFFFFF
 	max-width 680px
+	padding 10px
 	z-index 5
+	background-color rgba(0, 159, 218, .5)
 	h2
 		font-size 60px
-		line-height 60px
+		line-height 58px
 		font-family $bold
+		margin 5px 0
 		&.open-sans
 			font-family $boldopen
 	p
@@ -460,7 +454,7 @@ footer
 		line-height 34px
 		margin-bottom 10px
 	small
-		font-size 18px
+		font-size 24px
 .js-information
 	padding 20px 0
 	text-align center
@@ -743,24 +737,29 @@ table
 	.jm-book__flip
 		position relative
 		width 100%
-		height 235px
+		height 290px
 		margin-bottom 10px
 		.jm-book__front
 			flipCard()
 			flipCardFront()
 			width 100%
 			height 100%
-			max-width 180px
+			max-width 240px
 			background-color #FFFFFF
 			left 0
 			right 0
 			margin auto
 			padding 10px
 			img 
-				max-width 150px
+				max-width 200px
 				height 215px
 				object-fit cover
 				cursor pointer
+			h2
+				color #000000
+				margin 5px 0 15px 0
+				font-size 24px
+				line-height 24px
 			.mdl-radio
 				display block
 				margin-top 20px
@@ -773,19 +772,17 @@ table
 		.jm-book__back
 			flipCard()
 			flipCardBack()
+			flexCenter()
+			flex-direction column
+			justify-content center
 			width 100%
 			height 100%
-			max-width 180px
+			max-width 240px
 			background-color #425563
 			left 0
 			right 0
 			margin auto
-			padding 10px
-			h2
-				color #FFFFFF
-				margin 8px 0
-				font-size 24px
-				line-height 24px
+			padding 20px 10px
 			p
 				color #FFFFFF
 				font-size 16px
@@ -835,32 +832,10 @@ table
 	background-color #AAAAAA
 	border-radius 10px
 @media (min-width: 768px)
-	.navbar
+	.js-header
 		background-color transparent
 		&.navbarcolor
 			background-color #425563
-			.navbar-brand
-				img
-					max-width 125px
-				.jm-logo--flex
-					.jm-right
-						img 
-							max-width 90px
-	.navbar-brand
-		img
-			max-width 150px
-		.jm-logo--flex
-			.jm-right
-				img 
-					max-width 125px	
-	.navbar-default
-		.navbar-collapse
-			margin-top 0
-// @media (min-width: 768px)
-// 	.js-header
-// 		background-color transparent
-// 		&.navbarcolor
-// 			background-color #425563
 @media (max-width: 768px)
 	.js-fondo
 		&.fondo1
