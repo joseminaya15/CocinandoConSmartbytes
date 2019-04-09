@@ -30,10 +30,17 @@
     <div class="js-header">
         <div class="js-header--container">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
+                <div class="jm-logo--flex">
+                    <div class="jm-left">
+                        <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
+                    </div>
+                    <div class="jm-right">
+                        <img src="<?php echo RUTA_IMG?>logo/aruba.png">
+                    </div>
+                </div>
             </div>
             <div class="js-header--right">
-                <img src="<?php echo RUTA_IMG?>logo/logo-smartbytes.svg">
+                <img src="<?php echo RUTA_IMG?>logo/symantec-logo.png">
             </div>
         </div>
     </div>
@@ -50,19 +57,22 @@
             <div class="js-home js-flex">
                 <div class="js-contenido">
                     <h2>Dejar un punto de acceso a su data sin protegerla es como jugar con fuego.</h2>
-                    <p>Venga a preparar guiados por nosotros el plato de fondo m&aacute;s emblem&aacute;tico de la cocina peruana.</p>
-                    <small>"Lomo saltado"</small>
+                    <p>Venga a flamear junto con nosotros el plato de fondo m&aacute;s emblem&aacute;tico de la cocina peruana:</p>
+                    <small>"El Lomo saltado."</small>
                 </div>
             </div>
+        </div>
+        <div class="jm-logo--bottom">
+            <img src="<?php echo RUTA_IMG?>logo/logo-smartbytes.svg">
         </div>
     </section>
     <section id="register" class="js-section">
         <div class="js-container">
             <div class="js-information">
-                <h2>Jueves 9 de Mayo, 2019</h2>
+                <h2>Jueves 23 de Mayo, 2019</h2>
                 <h3>Hora de inicio: 4:00 p.m.</h3>
                 <p>Restaurante Segundo Muelle</p>
-                <span>Barrio Escalante, 100mts sur de Fresh Market o 600mts norte de Bagelmen´s, Calle 33, San Jos&eacute;</span>
+                <span>Centro Comercial Balboa Boutiques, Local 202, Piso 2 subiendo por el elevador Pinkberry.</span>
                 <small>No queremos que te olvides de esta cita</small>
                 <a href="http://iradianty.com/HPE/events/microsite/JustRightIT/public/cita/Evento_HPE_JustRightIT.ics">Reservar fecha</a>
             </div>
@@ -125,18 +135,18 @@
                     </div>
                 </div>
                 <div class="col-xs-12 text-center jm-subtitle">
-                    <h2>Queremos  compartir la mesa contigo para esta noche  por lo que te ofrecemos a elegir  estas opciones de estas espectaculares hamburguesas</h2>
+                    <h2>Queremos compartir esta noche la mesa con Ud. por lo que le ofrecemos a elegir estas opciones de estos deliciosos platos de la gastronom&iacute;a Peruana:</h2>
                 </div>
                 <div class="col-xs-12">
-                    <div class="col-md-3 col-sm-6 col-xs-6 jm-book">
+                    <div class="col-md-3 col-sm-6 col-xs-12 jm-book">
                         <div class="jm-book__flip">
                             <div class="jm-book__front">
-                                <h2>La aruba ex&oacute;tica</h2>
-                                <img src="<?php echo RUTA_IMG?>logo/burger1.jpg">
+                                <h2>Arroz Thai</h2>
+                                <img src="<?php echo RUTA_IMG?>logo/plato1.jpeg">
                             </div>
                             <div class="jm-book__back">
-                                <p>Estilo americano texano, torta de carne de res Premium en salsa BBQ, lonjas de tocineta crocante, 
-                                aros de cebolla empanizados, queso maduro y aros de jalape&ntilde;o.</p>
+                                <p>El Arroz frito tailand&eacute;s es una variedad de arroz frito que est&aacute; preparado al estilo de la Cocina tailandesa. 
+                                Es conocido como Khao Pad o Khao Phad procedente de khao (arroz) + pad (de o relativo a stir-fried).</p>
                                 <button id="book1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="openModalLibro(this.id)">Ver m&aacute;s</button>
                             </div>
                         </div>
@@ -144,15 +154,15 @@
                             <input type="radio" id="burger-1" class="mdl-radio__button" name="options" value="1">
                         </label>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 jm-book">
+                    <div class="col-md-3 col-sm-6 col-xs-12 jm-book">
                         <div class="jm-book__flip">
                             <div class="jm-book__front">
-                                <h2>La Simplivity</h2>
-                                <img src="<?php echo RUTA_IMG?>logo/burger2.jpg">                                
+                                <h2>Caucau de mariscos</h2>
+                                <img src="<?php echo RUTA_IMG?>logo/plato2.jpeg">                                
                             </div>
                             <div class="jm-book__back">
-                                <p>Delicioso lomo al t&eacute;rmino de su preferencia, ba&ntilde;ado en salsa 3 quesos, con mezclas de sabores, 
-                                aguacate, tocino y una deliciosa textura crocante de patac&oacute;n</p>
+                                <p>"Can" significa "menudencia" y que con la llegada de los chinos cul&iacute;es al territorio termin&oacute; de tomar forma. 
+                                "Cuando estos intentaban cortar en peque&ntilde;os trozos todos los ingredientes de determinado plato.</p>
                                 <button id="book2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="openModalLibro(this.id)">Ver m&aacute;s</button>
                             </div>
                         </div>
@@ -160,15 +170,14 @@
                             <input type="radio" id="burger-2" class="mdl-radio__button" name="options" value="1">
                         </label>                
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 jm-book">
+                    <div class="col-md-3 col-sm-6 col-xs-12 jm-book">
                         <div class="jm-book__flip">
                             <div class="jm-book__front">
-                                <h2>La Nimble</h2>
-                                <img src="<?php echo RUTA_IMG?>logo/burger3.jpg">
+                                <h2>Risotto Lima Norte</h2>
+                                <img src="<?php echo RUTA_IMG?>logo/plato3.jpeg">
                             </div>
                             <div class="jm-book__back">
-                                <p>Deliciosa hamburguesa con lomito, servido en lonjas con pan de ajonjol&iacute;, acompa&ntilde;ada con 
-                                guacamole ( ligeramente picante ), tocineta, rodajas de tomate con queso mozzarella fresco.</p>
+                                <p>Arroz cremoso a base de culantro, con pez espada al grill.</p>
                                 <button id="book3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="openModalLibro(this.id)">Ver m&aacute;s</button>
                             </div>
                         </div>
@@ -176,15 +185,16 @@
                             <input type="radio" id="burger-3" class="mdl-radio__button" name="options" value="1">
                         </label>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 jm-book">
+                    <div class="col-md-3 col-sm-6 col-xs-12 jm-book">
                         <div class="jm-book__flip">
                             <div class="jm-book__front">
-                                <h2>La ClearPass</h2>
-                                <img src="<?php echo RUTA_IMG?>logo/burger4.jpg">
+                                <h2>Spaguetti a la Huancaina</h2>
+                                <img src="<?php echo RUTA_IMG?>logo/plato4.jpeg">
                             </div>
                             <div class="jm-book__back">
-                                <p>Un rico pan artesanal con corteza y miga blanca, relleno de una mezcla de vegetales 
-                                salteados con salsa pomodoro de la casa y queso mozzarella gratinado.</p>
+                                <p>Una de las m&aacute;s modernas fusiones de la gastronom&iacute;a peruana son los Espaguetis en salsa a la huanca&iacute;na, 
+                                uniendo las pastas italianas con una de las salsas m&aacute;s representativas de la culinaria peruana. 
+                                Una mixtura precisa para dar sabor un interesante plato que cada vez es m&aacute;s popular.</p>
                                 <button id="book4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="openModalLibro(this.id)">Ver m&aacute;s</button>
                             </div>
                         </div>
@@ -205,15 +215,15 @@
     </section>
     <section id="login" class="js-section jm-white jm-acceso">
         <div class="js-container">
-            <h2 class="js-title">HAZ EL QUIZ Y G&Aacute;NATE ESTE DASH</h2>
+            <h2 class="js-title">Tan solo responda esta encuesta Y llevese ESTE DASH CAM.</h2>
             <img src="<?php echo RUTA_IMG?>fondo/regalo.png">
-            <p class="text-center">Si usted ya se encuentra registrado, ingrese su email para realizar un quiz y ganar grandes premios.</p>
+            <p class="text-center">Si usted ya se encuentra registrado, ingrese su email para realizar la encuesta y llevarte el DASH CAM</p>
             <div class="js-input js-input--default">
                 <label for="text">Email*</label>
                 <input type="text" id="emailRegister" onkeyup="verificarDatos(event);">
             </div>
             <div class="js-reserva text-center">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="ingresarQuiz()">Empezar Quiz</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="ingresarQuiz()">Empezar la encuesta</button>
             </div>
             <div id="registered" class="js-confirmation">
                 <h2>Registro completado. ¡Nos vemos en Houston!</h2>
@@ -241,15 +251,15 @@
                                 <div class="jm-title--checlbox">
                                     <h2>1. ¿La empresa tiene una soluci&oacute;n de seguridad perimetral un firewall dentro o fuera de las instalaciones?</h2>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1-1">
-                                        <input type="radio" id="option1-1" class="mdl-radio__button" name="options1" value="1">
+                                        <input type="radio" id="option1-1" class="mdl-radio__button" name="options1" value="Si">
                                         <span class="mdl-radio__label">Si</span>
                                     </label>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1-2">
-                                        <input type="radio" id="option1-2" class="mdl-radio__button" name="options1" value="2">
+                                        <input type="radio" id="option1-2" class="mdl-radio__button" name="options1" value="No">
                                         <span class="mdl-radio__label">No</span>
                                     </label>
                                 </div>
@@ -263,15 +273,15 @@
                                 <div class="jm-title--checlbox">
                                     <h2>2. ¿El antivirus de las m&aacute;quinas es un software centralizado, actualizado y gestionado a menudo?</h2>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2-1">
-                                        <input type="radio" id="option2-1" class="mdl-radio__button" name="options2" value="1">
+                                        <input type="radio" id="option2-1" class="mdl-radio__button" name="options2" value="Si">
                                         <span class="mdl-radio__label">Si</span>
                                     </label>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2-2">
-                                        <input type="radio" id="option2-2" class="mdl-radio__button" name="options2" value="2">
+                                        <input type="radio" id="option2-2" class="mdl-radio__button" name="options2" value="No">
                                         <span class="mdl-radio__label">No</span>
                                     </label>
                                 </div>
@@ -285,15 +295,15 @@
                                 <div class="jm-title--checlbox">
                                     <h2>3. ¿Existe alguna soluci&oacute;n instalada que cubra el apartado de antimalware?</h2>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option3-1">
-                                        <input type="radio" id="option3-1" class="mdl-radio__button" name="options3" value="1">
+                                        <input type="radio" id="option3-1" class="mdl-radio__button" name="options3" value="Si">
                                         <span class="mdl-radio__label">Si</span>
                                     </label>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option3-2">
-                                        <input type="radio" id="option3-2" class="mdl-radio__button" name="options3" value="2">
+                                        <input type="radio" id="option3-2" class="mdl-radio__button" name="options3" value="No">
                                         <span class="mdl-radio__label">No</span>
                                     </label>
                                 </div>
@@ -307,15 +317,15 @@
                                 <div class="jm-title--checlbox">
                                     <h2>4. ¿Se tratan las actualizaciones en los sistemas operativos de forma continuada, y est&aacute;n al d&iacute;a?</h2>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option4-1">
-                                        <input type="radio" id="option4-1" class="mdl-radio__button" name="options4" value="1">
+                                        <input type="radio" id="option4-1" class="mdl-radio__button" name="options4" value="Si">
                                         <span class="mdl-radio__label">Si</span>
                                     </label>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option4-2">
-                                        <input type="radio" id="option4-2" class="mdl-radio__button" name="options4" value="2">
+                                        <input type="radio" id="option4-2" class="mdl-radio__button" name="options4" value="No">
                                         <span class="mdl-radio__label">No</span>
                                     </label>
                                 </div>
@@ -329,15 +339,15 @@
                                 <div class="jm-title--checlbox">
                                     <h2>5. ¿La red empresarial est&aacute; segmentada de forma que, por ejemplo, se puedan distinguir equipos cliente y servidores?</h2>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option5-1">
-                                        <input type="radio" id="option5-1" class="mdl-radio__button" name="options5" value="1">
+                                        <input type="radio" id="option5-1" class="mdl-radio__button" name="options5" value="Si">
                                         <span class="mdl-radio__label">Si</span>
                                     </label>
                                 </div>
-                                <div class="js-checkbox max-width jm-checkbox--company">
+                                <div class="js-checkbox">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option5-2">
-                                        <input type="radio" id="option5-2" class="mdl-radio__button" name="options5" value="2">
+                                        <input type="radio" id="option5-2" class="mdl-radio__button" name="options5" value="No">
                                         <span class="mdl-radio__label">No</span>
                                     </label>
                                 </div>
@@ -350,8 +360,7 @@
                             <div class="jm-cupo">
                                 <img src="<?php echo RUTA_IMG?>logo/logo.jpg">
                                 <h2>Gracias por participar!</h2>
-                                <h3></h3>
-                                <h4>Para reclamar su premio, debes imprimir este c&oacute;digo que se le ha enviado a su correo.</h4>
+                                <h4>Para reclamar su premio deber&aacute; presentar la impresi&oacute;n o fotograf&iacute;a del c&oacute;digo que se le enviara a su correo electr&oacute;nico.</h4>
                                 <div class="jm-list--cupo">
                                     <p>- El souvenir solo se entrega el d&iacute;a del evento.<p>
                                     <p>- No es transferible, la entrega es personal.</p>
@@ -375,6 +384,7 @@
 				<div class="mdl-card">
 					<div class="mdl-card__title p-b-0">
 						<h2></h2>
+                        <img src="" class="libro-imagen"/>
 					</div>
 					<div class="mdl-card__supporting-text p-t-0">
 						<p></p>

@@ -21,13 +21,13 @@ class Admin extends CI_Controller {
         }else {
             foreach ($datos as $key){
                 if($key->flag_hamburguesa == 1){
-                    $hamburguesa = 'Hmaburguesa Texana';
+                    $hamburguesa = 'Arroz Thai';
                 }else if($key->flag_hamburguesa == 2){
-                    $hamburguesa = 'Hmaburguesa BF';
+                    $hamburguesa = 'Caucau de mariscos';
                 }else if($key->flag_hamburguesa == 3){
-                    $hamburguesa = 'Hmaburguesa Escalante ';
+                    $hamburguesa = 'Risotto Lima Norte';
                 }else if($key->flag_hamburguesa == 4){
-                    $hamburguesa = 'Hmaburguesa Vegetariana';
+                    $hamburguesa = 'Spaguetti a la Huancaina';
                 }else{
                     $hamburguesa = 'Ninguna';
                 }
@@ -43,16 +43,11 @@ class Admin extends CI_Controller {
                             <td class="text-left">'.$key->deporte.'</td>
                             <td class="text-left">'.$hamburguesa.'</td>
                             <td class="text-center">'.$key->fecha.'</td>
-                            <td class="text-left">'.$key->server.'</td>
-                            <td class="text-left">'.$key->storage.'</td>
-                            <td class="text-left">'.$key->wireless.'</td>
-                            <td class="text-left">'.$key->hyperconvergencia.'</td>
+                            <td class="text-left">'.$key->pregunta1.'</td>
                             <td class="text-left">'.$key->pregunta2.'</td>
                             <td class="text-left">'.$key->pregunta3.'</td>
                             <td class="text-left">'.$key->pregunta4.'</td>
                             <td class="text-left">'.$key->pregunta5.'</td>
-                            <td class="text-left">'.$key->pregunta6.'</td>
-                            <td class="text-left">'.$key->pregunta7.'</td>
                             <td class="text-left">'.$key->codigo.'</td>
                         </tr>';
             }

@@ -171,7 +171,7 @@ strong
 	position fixed
 	top 0
 	width 100%
-	z-index 5
+	z-index 10
 	padding 5px 15px
 	color #FFFFFF
 	height 75px
@@ -597,6 +597,9 @@ footer
 			text-align center
 			img 
 				max-width 120px
+				&.libro-imagen
+					max-width  100%
+					margin 20px 0
 			h2
 				font-size 28px
 				line-height 28px
@@ -709,6 +712,7 @@ table
 		opacity 1
 		position relative
 		transform inherit
+		z-index 10
 	&.fadeOutLeft
 		position absolute
 	&.fadeInRight
@@ -730,6 +734,15 @@ table
 		padding 0 10px
 		img 
 			max-width  120px
+.jm-logo--bottom
+	position absolute 
+	bottom 20px
+	z-index 9
+	left 0
+	right 0
+	text-align center
+	img
+		max-width 380px
 .jm-book
 	text-align center
 	margin 20px 0
@@ -758,7 +771,7 @@ table
 			h2
 				color #000000
 				margin 5px 0 15px 0
-				font-size 24px
+				font-size 22px
 				line-height 24px
 			.mdl-radio
 				display block
@@ -836,16 +849,12 @@ table
 		background-color transparent
 		&.navbarcolor
 			background-color #425563
-@media (max-width: 768px)
-	.js-fondo
-		&.fondo1
-			background url(../img/fondo/fondo1_mobile.jpg) no-repeat center center
 @media (max-width: 600px)
 	.js-contenido
 		padding 20px
 		h2
 			font-size 38px
-			line-height 42px
+			line-height 40px
 	.dataTables_info
 	.dataTables_paginate
 		margin 20px 0 !important

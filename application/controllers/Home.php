@@ -136,28 +136,18 @@ class Home extends CI_Controller {
 		$data['error'] = EXIT_ERROR;
       	$data['msj']   = null;
 		try {
-			$server            = $this->input->post('Server');
-			$storage           = $this->input->post('Storage');
-			$wireless          = $this->input->post('Wireless');
-			$hyperconvergencia = $this->input->post('Hyperconvergencia');
-			$pregunta2   	   = $this->input->post('Pregunta2');
+			$pregunta1   	   = $this->input->post('Pregunta1');
+			$pregunta2  	   = $this->input->post('Pregunta2');
 			$pregunta3  	   = $this->input->post('Pregunta3');
-			$pregunta4  	   = $this->input->post('Pregunta4');
-			$pregunta5 	 	   = $this->input->post('Pregunta5');
-			$pregunta6  	   = $this->input->post('Pregunta6');
-			$pregunta7  	   = $this->input->post('Pregunta7');
+			$pregunta4 	 	   = $this->input->post('Pregunta4');
+			$pregunta5  	   = $this->input->post('Pregunta5');
 			$codigo      	   = $this->input->post('Codigo');
 			$correo     	   = $this->session->userdata('email');
-			$actualizarParticipante = array('server'            => $server,
-											'storage'           => $storage,
-											'wireless'          => $wireless,
-											'hyperconvergencia' => $hyperconvergencia,
+			$actualizarParticipante = array('pregunta1' 	    => $pregunta1,
 											'pregunta2' 	    => $pregunta2,
 											'pregunta3' 	    => $pregunta3,
 											'pregunta4' 	    => $pregunta4,
 											'pregunta5' 	    => $pregunta5,
-											'pregunta6' 	    => $pregunta6,
-											'pregunta7'         => $pregunta7,
 											'codigo'            => $codigo);
 			$datoInsert  = $this->M_Datos->actualizarDatos($correo,'contact', $actualizarParticipante);
 			$this->sendCupo($correo,$codigo);

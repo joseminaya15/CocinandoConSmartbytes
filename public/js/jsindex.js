@@ -101,14 +101,6 @@ function sendInformation(){
 	}else if(burger4 == true) {
 		check_burger = 4;
 	}
-	// if(arrayComercializa == null || arrayComercializa == '') {
-	// 	msj('error', 'Seleccione una marca que comercialice su empresa');
-	// 	return;
-	// }
-	// if(arrayCompany == null || arrayCompany == '') {
-	// 	msj('error', 'Seleccione que describe mejor a tu empresa');
-	// 	return;
-	// }
 	$.ajax({
 		data : {Company      : company,
 			    Direccion    : direccion,
@@ -176,117 +168,21 @@ function nextQuestion(element){
 	section.addClass('animated fadeOutLeft');
 	$('#question-'+question).addClass('animated fadeInRight')
 }
-var arrayServer            = [];
-var arrayStorage           = [];
-var arrayWireless          = [];
-var arrayHyperconvergencia = [];
-var pregunta2  = [];
-var pregunta3  = [];
-var pregunta4  = [];
-var pregunta5  = [];
-var pregunta6  = [];
-var pregunta7  = [];
 function sendQuiz(){
+	var pregunta1 = $('input[name="options1"]:checked').val();
+	var pregunta2 = $('input[name="options2"]:checked').val();
+	var pregunta3 = $('input[name="options3"]:checked').val();
+	var pregunta4 = $('input[name="options4"]:checked').val();
+	var pregunta5 = $('input[name="options5"]:checked').val();
 	var caracteres = "abcdefghijkmnpqrtuvwxyzABCDEFGHJKMNPQRTUVWXYZ2346789";
 	var codigo = "";
 	for (i=0; i<6; i++) codigo +=caracteres.charAt(Math.floor(Math.random()*caracteres.length)); 
-	$(".jm-checkbox--server .is-checked").each(function (){
-		var isChecked    = $(this);
-		var nameOtros    = isChecked.find('input').attr('data-name');;
-		var textChecked  = isChecked.find('.mdl-checkbox__label').text();
-		arrayServer.push(textChecked);
-		if(nameOtros == "otros"){
-			var divInput  = isChecked.parents('.jm-list--checkbox').find('.jm-input').find('input').val();
-			arrayServer.push(divInput);
-		}
-	})
-	$(".jm-checkbox--storage .is-checked").each(function (){
-		var isChecked    = $(this);
-		var nameOtros    = isChecked.find('input').attr('data-name');;
-		var textChecked  = isChecked.find('.mdl-checkbox__label').text();
-		arrayStorage.push(textChecked);
-		if(nameOtros == "otros"){
-			var divInput  = isChecked.parents('.jm-list--checkbox').find('.jm-input').find('input').val();
-			arrayStorage.push(divInput);
-		}
-	})
-	$(".jm-checkbox--wireless .is-checked").each(function (){
-		var isChecked    = $(this);
-		var nameOtros    = isChecked.find('input').attr('data-name');;
-		var textChecked  = isChecked.find('.mdl-checkbox__label').text();
-		arrayWireless.push(textChecked);
-		if(nameOtros == "otros"){
-			var divInput  = isChecked.parents('.jm-list--checkbox').find('.jm-input').find('input').val();
-			arrayWireless.push(divInput);
-		}
-	})
-	$(".jm-checkbox--hyperconvergencia .is-checked").each(function (){
-		var isChecked    = $(this);
-		var nameOtros    = isChecked.find('input').attr('data-name');;
-		var textChecked  = isChecked.find('.mdl-checkbox__label').text();
-		arrayHyperconvergencia.push(textChecked);
-		if(nameOtros == "otros"){
-			var divInput  = isChecked.parents('.jm-list--checkbox').find('.jm-input').find('input').val();
-			arrayHyperconvergencia.push(divInput);
-		}
-	})
-	$(".jm-checkbox--company .is-checked").each(function (){
-		var isChecked    = $(this);
-		var inputChecked = isChecked.find('.mdl-checkbox__label');
-		var textChecked  = inputChecked.text();
-		pregunta2.push(textChecked);
-	})
-	$(".jm-checkbox--three .is-checked").each(function (){
-		var isChecked    = $(this);
-		var inputChecked = isChecked.find('.mdl-checkbox__label');
-		var textChecked  = inputChecked.text();
-		pregunta3.push(textChecked);
-	})
-	$(".jm-checkbox--four .is-checked").each(function (){
-		var isChecked    = $(this);
-		var inputChecked = isChecked.find('.mdl-checkbox__label');
-		var textChecked  = inputChecked.text();
-		pregunta4.push(textChecked);
-	})
-	$(".jm-checkbox--five .is-checked").each(function (){
-		var isChecked    = $(this);
-		var inputChecked = isChecked.find('.mdl-checkbox__label');
-		var textChecked  = inputChecked.text();
-		pregunta5.push(textChecked);
-	})
-	$(".jm-checkbox--six .is-checked").each(function (){
-		var isChecked    = $(this);
-		var inputChecked = isChecked.find('.mdl-checkbox__label');
-		var textChecked  = inputChecked.text();
-		pregunta6.push(textChecked);
-	})
-	$(".jm-checkbox--seven .is-checked").each(function (){
-		var isChecked    = $(this);
-		var inputChecked = isChecked.find('.mdl-checkbox__label');
-		var textChecked  = inputChecked.text();
-		pregunta7.push(textChecked);
-	})
-	arrayServer            = (arrayServer == null) ? '' : arrayServer.toString();
-	arrayStorage           = (arrayStorage == null) ? '' : arrayStorage.toString();
-	arrayWireless          = (arrayWireless == null) ? '' : arrayWireless.toString();
-	arrayHyperconvergencia = (arrayHyperconvergencia == null) ? '' : arrayHyperconvergencia.toString();
-	pregunta2              = (pregunta2 == null) ? '' : pregunta2.toString();
-	pregunta3              = (pregunta3 == null) ? '' : pregunta3.toString();
-	pregunta4              = (pregunta4 == null) ? '' : pregunta4.toString();
-	pregunta5              = (pregunta5 == null) ? '' : pregunta5.toString();
-	pregunta6              = (pregunta6 == null) ? '' : pregunta6.toString();
-	pregunta7              = (pregunta7 == null) ? '' : pregunta7.toString();
 	$.ajax({
-		data : {Server            : arrayServer,
-				Storage           : arrayStorage,
-				Wireless          : arrayWireless,
-				Hyperconvergencia : arrayHyperconvergencia,
-				Pregunta2   	  : pregunta2,
+		data : {Pregunta1   	  : pregunta1,
+				Pregunta2		  : pregunta2,
 				Pregunta3		  : pregunta3,
-				Pregunta4		  : pregunta4,
-				Pregunta5   	  : pregunta5,
-				Pregunta6 		  : pregunta6,
-				Pregunta7   	  : pregunta7,
+				Pregunta4   	  : pregunta4,
+				Pregunta5 		  : pregunta5,
 				Codigo            : codigo},
 		url   : 'home/quiz',
 		type  : 'POST'
@@ -294,20 +190,9 @@ function sendQuiz(){
 		try{
         	data = JSON.parse(data);
         	if(data.error == 0){
-				arrayServer            = [];
-				arrayStorage           = [];
-				arrayWireless          = [];
-				arrayHyperconvergencia = [];
-				pregunta2  = [];
-				pregunta3  = [];
-				pregunta4  = [];
-				pregunta5  = [];
-				pregunta6  = [];
-				pregunta7  = [];
 				$('.js-checkbox').find('.mdl-checkbox').removeClass('is-checked');
 				$('.js-checkbox').find('input').prop("checked", false);
 				$('#textAnswer').css('display','none');
-				$('.jm-cupo').find('h3').text(codigo);
 				$('.jm-question').removeClass('fadeInRight');
 				$('#question-seven').addClass('animated fadeOutLeft');
 				$('#section-cupo').addClass('animated fadeInRight');
@@ -353,7 +238,8 @@ function openModalLibro(id){
 	var modalTeam = $('#ModalLibro');
 	var tituloModal = id.parents('.jm-book').find('h2');
 	var descripcion = id.parents('.jm-book').find('p');
-	var contenido = id.find('.jm-tea__contenido');
+	var imagen      = id.parents('.jm-book').find('img');
+	modalTeam.find('img').attr("src",imagen.attr('src'));
 	modalTeam.find('h2').text(tituloModal[0].innerText);
 	modalTeam.find('p').text(descripcion[0].innerText);
 	modalTeam.modal('show');

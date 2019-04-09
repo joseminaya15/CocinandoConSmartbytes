@@ -28,7 +28,7 @@
                 <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
             </div>
             <div class="js-header--right">
-                <p>HPE Evento Pais</p>
+                <p>Cocinando con HPE</p>
             </div>
         </div>
         <section class="js-section js-height">
